@@ -88,7 +88,7 @@ function uploadPhoto(foto) {
 
 	var ft = new FileTransfer();
 	/*ft.upload(foto,"subirArchivo.php",function(r){*/
-    ft.upload(foto,"http://charlyxaar.esy.es/subirArchivo.php",function(r){
+    ft.upload(foto,"http://charlyxaar.esy.es/r/subirArchivo.php",function(r){
 		navigator.notification.confirm("El archivo: "+r.response,null, "Notificacion");
 	}, function(err){
 		navigator.notification.alert("Error: "+err.code+" detalle: "+err.response,null, "Error de Envío");
