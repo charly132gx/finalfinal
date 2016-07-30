@@ -156,7 +156,7 @@ $("#btnActId").tap(function (){
       $.ajax({
         type:"POST",
         /*url:"guardarAct.php",*/
-    url:"http://charlyxaar.esy.es/r/guardarAct.php",
+    url:"http://charlyxaar.esy.es/guardarAct.php",
         data:"id="+id+"&nombre="+nom+"&dir="+dir+"&Rfc="+rfc+"&tel="+tel+"&classif="+cla+"&lat="+lat+"&long="+lon+"&fot="+fot,
         success: exeGuardarAct
       });
